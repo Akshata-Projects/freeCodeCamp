@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin:0;
+    /* border: 1px solid red; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+   
+}
+header {
+    position: fixed;
+    width: 100vw;
+  }
+
+#navbar{
+    background-color: rgb(211, 15, 93);
+    height: 10vh;
+    position: sticky;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    top: 10%;
+    left: 10%;
+   
+}
+
+#welcome-section{
+    background: linear-gradient(60deg, rgb(0, 0, 0), rgb(218, 196, 196));
+    height: 100vh;
+}
+
+#welcome-section h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 20% 0 0 0;
+}
+#welcome-section p{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(211, 15, 93);
+}
+
+#projects{
+    background-color: darkblue;
+    color:white;
+    padding: 1% 0 0 0;
+    text-align: center;
+    height: 100vh;
+    /* text-decoration: underline; */
+    font-size: 25px;
+    /* align-items: center; */
+}
+
+.grid-projects{
+    border: 1px solid brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin-left:10% ;
+}
+
+#projects .project-tile{
+    height: 20vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    margin: 20px;
+    
+   }
+
+.grid-projects > .project-tile > a{
+    
+    text-decoration: none;
+    background-color: rgb(52, 51, 51);
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding: 5%;
+}
+#projects>a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: -10%;
+    width: 15%;
+    padding: 1%;
+    background-color: rgb(79, 76, 76);
+    border-radius: 10px;
+}
+
+.contactMe{
+    height: 100vh;
+    background-color: rgb(79,76,76);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 20%;
+}
+
+hr{
+    height: 50px;
+    color: red;
+}
+
+@media only screen and (max-width:430px){
+    .grid-projects{
+        border: 1px solid brown;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        margin-left:10% ;
+    }
+}
