@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta name="survey" charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Here goes the description of paragraph</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Name:
+          <input type="text" id="name" placeholder="Your Name" required />
+        </label>
+
+        <label id="email-label">
+          Email:
+          <input type="email" id="email" placeholder="abc@xyz.com" required />
+        </label>
+        <label id="number-label">
+          Phone Number:
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="10"
+            placeholder="Phone number"
+          />
+        </label>
+        <label>dropdown</label>
+        <select id="dropdown">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <!-- radio buttons -->
+        <label>
+          Yes
+          <input type="radio" name="option" value="yes" />
+        </label>
+        <label
+          >No
+          <input type="radio" name="option" value="no" />
+        </label>
+        <!-- Every radio button group should have at least 2 radio buttons. -->
+        <!-- checkbox -->
+        <label>checkbox 1</label>
+        <input type="checkbox" name="chk1" value="chk1" />
+        <label>checkbox 2</label>
+        <input type="checkbox" name="chk2" value="chk2" />
+        <textarea row="3" cols="10"> </textarea>
+        <input type="submit" value="submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
