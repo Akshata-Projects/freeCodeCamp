@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#navbar {
+    text-decoration: none;
+    border: 2px solid black;
+    width:220px;
+    height:240vh;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+
+#navbar a{
+    text-decoration: none;
+    border-bottom: 2px solid grey;
+    color: black;
+       
+}
+
+.main-section{
+    border: 2px solid orange;
+    z-index: 1;
+    margin-left: 15%;
+}
+
+@media(min-width:450px) and (max-width:1190px){
+    #navbar{
+        width: 100%;
+        height:50%;
+        float: right;
+        font-size: medium;
+        border: none;
+    }
+    .main-section{
+        border: 2px solid orange;
+        z-index: 1; 
+        margin-left: 15%;
+    }
+}
